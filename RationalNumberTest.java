@@ -78,11 +78,41 @@ public class RationalNumberTest {
         asserEquals((int)0, test2.getNumerator);
         
         test2.setNumerator((int) 7);
-        asserEquals((double)7, test2.getNumerator);
+        asserEquals((int)7, test2.getNumerator);
         
                
     }
     
     @Test
+    public void testSetNumerator(){
+        System.out.println("Test setNumerator");
+        
+        RationalNumber test3 = new RationalNumber();
+        
+        test3.setNumerator((int) -7);
+        assertEquals((int) -7, test3.getNumerator());
+        
+        test3.setNumerator((int) 0);
+        asserEquals((int) 0, test3.getNumerator());
+        
+        test3.setNumerator((int) 8);
+        asserEquals((int) 8, test3.getNumerator());        
+    }
+    
+    @Test
+    public void testSetDenominator(){
+        System.out.println("Test setDenominator");
+        
+        RationalNumber test4 = new RationalNumber();
+        
+        test4.setNumerator((int) -2);
+        assertEquals((int) -2, test4.getNumerator());
+        
+        test4.setNumerator((int) 0);
+        asserEquals((int) 0, test4.getNumerator());
+        
+        test4.setNumerator((int) 6);
+        asserEquals((int) 6, test4.getNumerator());        
+    }
 
 }
