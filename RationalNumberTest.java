@@ -78,9 +78,11 @@ public class RationalNumberTest {
         asserEquals((int)0, test2.getNumerator);
         
         test2.setNumerator((int) 7);
-        asserEquals((int)7, test2.getNumerator);
+        asserEquals((double)7, test2.getNumerator);
         
                
     }
+    
+    @Test
 
 }
