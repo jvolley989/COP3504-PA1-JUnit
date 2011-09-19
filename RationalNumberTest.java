@@ -109,10 +109,10 @@ public class RationalNumberTest {
         assertEquals((int) -2, test4.getNumerator());
         
         test4.setNumerator((int) 0);
-        asserEquals((int) 0, test4.getNumerator());
+        assertEquals((int) 0, test4.getNumerator());
         
         test4.setNumerator((int) 6);
-        asserEquals((int) 6, test4.getNumerator());        
+        assertEquals((int) 6, test4.getNumerator());        
     }
     
     @Test
@@ -134,5 +134,23 @@ public class RationalNumberTest {
         RationalNumber fiveSevenths = new RationalNumber(5, 7);
         RationalNumber negativeFourThirds = new RationalNumber(-4, 3);
         RationalNumber fiveHalves = new RationalNumber(5, 2);
+        
+        
+        //ADD SECTION
+        assertEquals((int) -44, negativeFourEights.perform("add", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.perform("add", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeFourEights.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeFourEights.perform("add", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 12, negativeFourEights.perform("add", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.perform("add", fiveSevenths).getDenominator());
+        
+        //SUBTRACT SECTION
+        
+        //MULTIPLY SECTION
+        
+        //DIVIDE SECTION
     }
 }
