@@ -147,6 +147,12 @@ public class RationalNumberTest {
         assertEquals((int) 12, negativeFourEights.perform("add", fiveSevenths).getNumerator()); 
         assertEquals((int) 56, negativeFourEights.perform("add", fiveSevenths).getDenominator());
         
+        assertEquals((int) -44, negativeFourEights.perform("add", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, negativeFourEights.perform("add", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 32, negativeFourEights.perform("add", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, negativeFourEights.perform("add", fiveHalves).getDenominator());
+        
         //SUBTRACT SECTION
         
         //MULTIPLY SECTION
