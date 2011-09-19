@@ -114,5 +114,25 @@ public class RationalNumberTest {
         test4.setNumerator((int) 6);
         asserEquals((int) 6, test4.getNumerator());        
     }
-
+    
+    @Test
+    public void testPerform() {
+        System.out.println("Test perform");
+        
+        //Setup the internal rationals to test against
+        RationalNumber negativeFourEights = new RationalNumber(-4, 8);
+        RationalNumber negativeThreeHalves = new RationalNumber(-3, 2);
+        RationalNumber fourOverZero = new RationalNumber(4, 0);
+        RationalNumber zeroOverZero = new RationalNumber(0, 0);
+        RationalNumber sixEights = new RationalNumber(6, 8);
+        RationalNumber sevenThirds = new RationalNumber(7, 3);
+        
+        //Setup the rationals to pass to the rationals to test against
+        RationalNumber negativeTwoSevenths = new RationalNumber(-2, 7);
+        RationalNumber oneOverZero = new RationalNumber(1, 0);
+        RationalNumber zeroOverZero_too = new RationalNumber(0, 0);
+        RationalNumber fiveSevenths = new RationalNumber(5, 7);
+        RationalNumber negativeFourThirds = new RationalNumber(-4, 3);
+        RationalNumber fiveHalves = new RationalNumber(5, 2);
+    }
 }
