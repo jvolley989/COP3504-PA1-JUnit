@@ -284,18 +284,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, negativeFourEights.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, negativeFourEights.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, negativeFourEights.perform("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, negativeFourEights.perform("mult", zeroOverZero).getDenominator());
         
@@ -313,20 +307,14 @@ public class RationalNumberTest {
         assertEquals((int) 6, negativeThreeHalves.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 14, negativeThreeHalves.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
-        //assertEquals((int) 0, negativeThreeHalves.perform("mult", zeroOverZero).getNumerator());
-        //assertEquals((int) 0, negativeThreeHalves.perform("mult", zeroOverZero).getDenominator());
+        /*Not sure if 0/0 returns 0/0 or error*/
+        // assertEquals((int) 0, negativeThreeHalves.perform("mult", zeroOverZero).getNumerator());
+        // assertEquals((int) 0, negativeThreeHalves.perform("mult", zeroOverZero).getDenominator());
         
         assertEquals((int) -15, negativeThreeHalves.perform("mult", fiveSevenths).getNumerator());
         assertEquals((int) 14, negativeThreeHalves.perform("mult", fiveSevenths).getDenominator());
@@ -345,18 +333,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, fourOverZero.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, fourOverZero.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, fourOverZero.perform("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, fourOverZero.perform("mult", zeroOverZero).getDenominator());
         
@@ -371,24 +353,17 @@ public class RationalNumberTest {
         
         
           //zeroOverZero
-          /* These will all come out to be an error depending on what we chose to do with our expected value = error 
-          computations. If we choose the method I indicated above then I will finish this section once we decide */
+          /*Not sure if 0/0 returns 0/0 or error*/
           
         assertEquals((int) 8, zeroOverZero.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, zeroOverZero.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, zeroOverZero.perform("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, zeroOverZero.perform("mult", zeroOverZero).getDenominator());
         
@@ -406,18 +381,12 @@ public class RationalNumberTest {
         assertEquals((int) -12, sixEights.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, sixEights.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, sixEights.perform("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, sixEights.perform("mult", zeroOverZero).getDenominator());
         
@@ -435,18 +404,12 @@ public class RationalNumberTest {
         assertEquals((int) -14, sevenThirds.perform("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 21, sevenThirds.perform("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.perform("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.perform("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, sevenThirds.perform("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, sevenThirds.perform("mult", zeroOverZero).getDenominator());
         
@@ -467,19 +430,11 @@ public class RationalNumberTest {
         assertEquals((int) 28, negativeFourEights.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 16, negativeFourEights.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("div", oneOverZero).getDenominator());
    
-/*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.perform("div", zeroOverZero).getDenominator());
         
@@ -497,20 +452,12 @@ public class RationalNumberTest {
         assertEquals((int) 21, negativeThreeHalves.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 4, negativeThreeHalves.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("div", oneOverZero).getDenominator());
         
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.perform("div", zeroOverZero).getDenominator());
         
@@ -531,18 +478,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, fourOverZero.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, fourOverZero.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.perform("div", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, fourOverZero.perform("div", zeroOverZero).getNumerator());
         //assertEquals((int) 0, fourOverZero.perform("div", zeroOverZero).getDenominator());
         
@@ -557,24 +498,17 @@ public class RationalNumberTest {
         
         
           //zeroOverZero
-          /* These will all come out to be an error depending on what we chose to do with our expected value = error 
-          computations. If we choose the method I indicated above then I will finish this section once we decide */
+          /*Not sure if 0/0 returns 0/0 or error*/
           
         assertEquals((int) 8, zeroOverZero.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, zeroOverZero.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.perform("div", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, zeroOverZero.perform("div", zeroOverZero).getNumerator());
         //assertEquals((int) 0, zeroOverZero.perform("div", zeroOverZero).getDenominator());
         
@@ -592,20 +526,12 @@ public class RationalNumberTest {
         assertEquals((int) -42, sixEights.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 16, sixEights.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", oneOverZero).getDenominator());
         
         
-       /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+       /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", zeroOverZero).getDenominator());
         
@@ -624,20 +550,12 @@ public class RationalNumberTest {
         assertEquals((int) -49, sevenThirds.perform("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 6, sevenThirds.perform("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.perform("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.perform("div", oneOverZero).getDenominator());
         
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.perform("div", zeroOverZero).getDenominator());
         
@@ -675,12 +593,14 @@ public class RationalNumberTest {
         
         
         //ADDITION
+        
+        // -4/8
         assertEquals((int) -44, negativeFourEights.addRational("add", negativeTwoSevenths).getNumerator()); 
         assertEquals((int) 56, negativeFourEights.addRational("add", negativeTwoSevenths).getDenominator());
         
           //Umm, shouldn't this throw an error because adding 0/0?
-          //assertEquals((int) -4, negativeFourEights.addRational("add", zeroOverZero).getNumerator());
-          //assertEquals((int) 8, negativeFourEights.addRational("add", zeroOverZero).getNumerator());
+          //assertEquals((int) -4, negativeFourEights.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeFourEights.perform("add", zeroOverZero).getNumerator());
         
         assertEquals((int) 12, negativeFourEights.addRational("add", fiveSevenths).getNumerator()); 
         assertEquals((int) 56, negativeFourEights.addRational("add", fiveSevenths).getDenominator());
@@ -690,6 +610,57 @@ public class RationalNumberTest {
         
         assertEquals((int) 32, negativeFourEights.addRational("add", fiveHalves).getNumerator()); 
         assertEquals((int) 16, negativeFourEights.addRational("add", fiveHalves).getDenominator());
+        
+        // -3/2
+        assertEquals((int) -25, negativeThreeHalves.addRational("add", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.addRational("add", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeThreeHalves.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeThreeHalves.perform("add", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -11, negativeThreeHalves.addRational("add", fiveSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.addRational("add", fiveSevenths).getDenominator());
+        
+        assertEquals((int) -17, negativeThreeHalves.addRational("add", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 6, negativeThreeHalves.addRational("add", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 2, negativeThreeHalves.addRational("add", fiveHalves).getNumerator()); 
+        assertEquals((int) 2, negativeThreeHalves.addRational("add", fiveHalves).getDenominator());
+        
+        // 6/8
+        assertEquals((int) 26, sixEights.addRational("add", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.addRational("add", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sixEights.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sixEights.perform("add", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 82, sixEights.addRational("add", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.addRational("add", fiveSevenths).getDenominator());
+        
+        assertEquals((int) -14, sixEights.addRational("add", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, sixEights.addRational("add", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 52, sixEights.addRational("add", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, sixEights.addRational("add", fiveHalves).getDenominator());
+        
+        // 7/3
+        assertEquals((int) 43, sevenThirds.addRational("add", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.addRational("add", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sevenThirds.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sevenThirds.perform("add", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 64, sevenThirds.addRational("add", fiveSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.addRational("add", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 9, sevenThirds.addRational("add", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 9, sevenThirds.addRational("add", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 29, sevenThirds.addRational("add", fiveHalves).getNumerator()); 
+        assertEquals((int) 6, sevenThirds.addRational("add", fiveHalves).getDenominator());
 }
         
         @Test
@@ -714,6 +685,74 @@ public class RationalNumberTest {
         
         
         //SUBTRACTION
+        
+        // -4/8
+        assertEquals((int) -12, negativeFourEights.subRational("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.subRational("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeFourEights.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeFourEights.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -68, negativeFourEights.subRational("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.subRational("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 20, negativeFourEights.subRational("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, negativeFourEights.subRational("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -48, negativeFourEights.subRational("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, negativeFourEights.subRational("sub", fiveHalves).getDenominator());
+        
+        // -3/2
+        assertEquals((int) -17, negativeThreeHalves.subRational("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.subRational("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeThreeHalves.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeThreeHalves.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -31, negativeThreeHalves.subRational("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.subRational("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) -17, negativeThreeHalves.subRational("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 6, negativeThreeHalves.subRational("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 8, negativeThreeHalves.subRational("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 2, negativeThreeHalves.subRational("sub", fiveHalves).getDenominator());
+        
+        // 6/8
+        assertEquals((int) 58, sixEights.subRational("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.subRational("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sixEights.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sixEights.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 82, sixEights.subRational("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.subRational("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 2, sixEights.subRational("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, sixEights.subRational("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -28, sixEights.subRational("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, sixEights.subRational("sub", fiveHalves).getDenominator());
+        
+        // 7/3
+        assertEquals((int) 55, sevenThirds.subRational("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.subRational("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sevenThirds.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sevenThirds.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 34, sevenThirds.subRational("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.subRational("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 11, sevenThirds.subRational("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 3, sevenThirds.subRational("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -1, sevenThirds.subRational("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 6, sevenThirds.subRational("sub", fiveHalves).getDenominator());
         
 }
 
@@ -744,18 +783,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, negativeFourEights.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, negativeFourEights.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, negativeFourEights.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, negativeFourEights.multRational("mult", zeroOverZero).getDenominator());
         
@@ -773,18 +806,12 @@ public class RationalNumberTest {
         assertEquals((int) 6, negativeThreeHalves.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 14, negativeThreeHalves.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, negativeThreeHalves.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, negativeThreeHalves.multRational("mult", zeroOverZero).getDenominator());
         
@@ -805,18 +832,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, fourOverZero.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, fourOverZero.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, fourOverZero.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, fourOverZero.multRational("mult", zeroOverZero).getDenominator());
         
@@ -831,24 +852,17 @@ public class RationalNumberTest {
         
         
           //zeroOverZero
-          /* These will all come out to be an error depending on what we chose to do with our expected value = error 
-          computations. If we choose the method I indicated above then I will finish this section once we decide */
+          /*Not sure if 0/0 returns 0/0 or error*/
           
         assertEquals((int) 8, zeroOverZero.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, zeroOverZero.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, zeroOverZero.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, zeroOverZero.multRational("mult", zeroOverZero).getDenominator());
         
@@ -866,18 +880,12 @@ public class RationalNumberTest {
         assertEquals((int) -12, sixEights.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, sixEights.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, sixEights.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, sixEights.multRational("mult", zeroOverZero).getDenominator());
         
@@ -895,18 +903,12 @@ public class RationalNumberTest {
         assertEquals((int) -14, sevenThirds.multRational("mult", negativeTwoSevenths).getNumerator());
         assertEquals((int) 21, sevenThirds.multRational("mult", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.multRational("mult", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.multRational("mult", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, sevenThirds.multRational("mult", zeroOverZero).getNumerator());
         //assertEquals((int) 0, sevenThirds.multRational("mult", zeroOverZero).getDenominator());
         
@@ -949,19 +951,11 @@ public class RationalNumberTest {
         assertEquals((int) 28, negativeFourEights.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 16, negativeFourEights.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.divRational("div", oneOverZero).getDenominator());
    
-/*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.divRational("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeFourEights.divRational("div", zeroOverZero).getDenominator());
         
@@ -979,20 +973,12 @@ public class RationalNumberTest {
         assertEquals((int) 21, negativeThreeHalves.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 4, negativeThreeHalves.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.divRational("div", oneOverZero).getDenominator());
         
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.divRational("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, negativeThreeHalves.divRational("div", zeroOverZero).getDenominator());
         
@@ -1013,18 +999,12 @@ public class RationalNumberTest {
         assertEquals((int) 8, fourOverZero.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, fourOverZero.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, fourOverZero.divRational("div", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, fourOverZero.divRational("div", zeroOverZero).getNumerator());
         //assertEquals((int) 0, fourOverZero.divRational("div", zeroOverZero).getDenominator());
         
@@ -1039,24 +1019,17 @@ public class RationalNumberTest {
         
         
           //zeroOverZero
-          /* These will all come out to be an error depending on what we chose to do with our expected value = error 
-          computations. If we choose the method I indicated above then I will finish this section once we decide */
+          /*Not sure if 0/0 returns 0/0 or error*/
           
         assertEquals((int) 8, zeroOverZero.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 56, zeroOverZero.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, zeroOverZero.divRational("div", oneOverZero).getDenominator());
         
         
-        /*if we have not contacted him about the result for 0/0 then we should go with our test case that indicates our expected value
-        to be 0/0. If when we actually run our test when we do eventually have our full code and there is an error then we can change it.
-        we must have something though*/
+        /*Not sure if 0/0 returns 0/0 or error*/
         //assertEquals((int) 0, zeroOverZero.divRational("div", zeroOverZero).getNumerator());
         //assertEquals((int) 0, zeroOverZero.divRational("div", zeroOverZero).getDenominator());
         
@@ -1074,20 +1047,12 @@ public class RationalNumberTest {
         assertEquals((int) -42, sixEights.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 16, sixEights.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", oneOverZero).getDenominator());
         
         
-       /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+       /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", zeroOverZero).getDenominator());
         
@@ -1106,20 +1071,12 @@ public class RationalNumberTest {
         assertEquals((int) -49, sevenThirds.divRational("div", negativeTwoSevenths).getNumerator());
         assertEquals((int) 6, sevenThirds.divRational("div", negativeTwoSevenths).getDenominator());
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.divRational("div", oneOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sevenThirds.divRational("div", oneOverZero).getDenominator());
         
         
-        /*Is this how we would indicate that we expect an error. We must show the test for this no? This is what I came
-        up with. I was looking through the Assert method and this is probably the closest I could find. I found it on this site 
-         http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html#assertEquals. If we do 
-         use this we must extend java.lang.RationalNumber. Let me know if you think this will work or what we should do otherwise. Just an idea
-         because i am pretty lost at what to do here. Jenna */
+        /*Should give an error, not sure of the ideal way to write it*/
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", zeroOverZero).getNumerator());
         //assertEquals( java.lang.String "0/0", (int) null, sixEights.divRational("div", zeroOverZero).getDenominator());
         
