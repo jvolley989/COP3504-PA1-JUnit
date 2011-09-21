@@ -210,6 +210,74 @@ public class RationalNumberTest {
         
         //SUBTRACT SECTION
         
+        // -4/8
+        assertEquals((int) -12, negativeFourEights.perform("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.perform("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeFourEights.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeFourEights.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -68, negativeFourEights.perform("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, negativeFourEights.perform("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 20, negativeFourEights.perform("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, negativeFourEights.perform("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -48, negativeFourEights.perform("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, negativeFourEights.perform("sub", fiveHalves).getDenominator());
+        
+        // -3/2
+        assertEquals((int) -17, negativeThreeHalves.perform("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.perform("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeThreeHalves.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeThreeHalves.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -31, negativeThreeHalves.perform("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.perform("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) -17, negativeThreeHalves.perform("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 6, negativeThreeHalves.perform("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 8, negativeThreeHalves.perform("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 2, negativeThreeHalves.perform("sub", fiveHalves).getDenominator());
+        
+        // 6/8
+        assertEquals((int) 58, sixEights.perform("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.perform("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sixEights.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sixEights.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 82, sixEights.perform("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 56, sixEights.perform("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 2, sixEights.perform("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 24, sixEights.perform("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -28, sixEights.perform("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 16, sixEights.perform("sub", fiveHalves).getDenominator());
+        
+        // 7/3
+        assertEquals((int) 55, sevenThirds.perform("sub", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.perform("sub", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, sevenThirds.perform("sub", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, sevenThirds.perform("sub", zeroOverZero).getNumerator());
+        
+        assertEquals((int) 34, sevenThirds.perform("sub", fiveSevenths).getNumerator()); 
+        assertEquals((int) 21, sevenThirds.perform("sub", fiveSevenths).getDenominator());
+        
+        assertEquals((int) 11, sevenThirds.perform("sub", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 3, sevenThirds.perform("sub", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) -1, sevenThirds.perform("sub", fiveHalves).getNumerator()); 
+        assertEquals((int) 6, sevenThirds.perform("sub", fiveHalves).getDenominator());
+        
         //MULTIPLY SECTION
         
           //negativeFourEights
