@@ -139,6 +139,8 @@ public class RationalNumberTest {
         
         
         //ADD SECTION
+        
+        // -4/8
         assertEquals((int) -44, negativeFourEights.perform("add", negativeTwoSevenths).getNumerator()); 
         assertEquals((int) 56, negativeFourEights.perform("add", negativeTwoSevenths).getDenominator());
         
@@ -154,6 +156,23 @@ public class RationalNumberTest {
         
         assertEquals((int) 32, negativeFourEights.perform("add", fiveHalves).getNumerator()); 
         assertEquals((int) 16, negativeFourEights.perform("add", fiveHalves).getDenominator());
+        
+        // -3/2
+        assertEquals((int) -25, negativeThreeHalves.perform("add", negativeTwoSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.perform("add", negativeTwoSevenths).getDenominator());
+        
+          //Umm, shouldn't this throw an error because adding 0/0?
+          //assertEquals((int) -4, negativeThreeHalves.perform("add", zeroOverZero).getNumerator());
+          //assertEquals((int) 8, negativeThreeHalves.perform("add", zeroOverZero).getNumerator());
+        
+        assertEquals((int) -11, negativeThreeHalves.perform("add", fiveSevenths).getNumerator()); 
+        assertEquals((int) 14, negativeThreeHalves.perform("add", fiveSevenths).getDenominator());
+        
+        assertEquals((int) -17, negativeThreeHalves.perform("add", negativeFourThirds).getNumerator()); 
+        assertEquals((int) 6, negativeThreeHalves.perform("add", negativeFourThirds).getDenominator());
+        
+        assertEquals((int) 2, negativeThreeHalves.perform("add", fiveHalves).getNumerator()); 
+        assertEquals((int) 2, negativeThreeHalves.perform("add", fiveHalves).getDenominator());
         
         //SUBTRACT SECTION
         
